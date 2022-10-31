@@ -1,0 +1,67 @@
+{
+  "name": "@lbingxin/icon-cli",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "bin": {
+    "icon-cli": "./bin/icon-cli.js"
+  },
+  "repository": "https://github.com/LBINGXIN/icon-cli.git",
+  "author": "LBINGXIN <lbingxin12@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "cli",
+    "iconfont",
+    "puppeteer",
+    "icon-cli",
+    "自动下载iconfont"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "eslint": "eslint --fix src --ext .ts --max-warnings=0",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "commit": "cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "prepare": "husky install",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run eslint",
+      "npm run prettier"
+    ]
+  },
+  "description": "icon-cli",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "compressing": "^1.6.2",
+    "fs-extra": "^10.1.0",
+    "ora": "5.4.1",
+    "puppeteer": "13.2.0",
+    "shelljs": "^0.8.5"
+  }
+}

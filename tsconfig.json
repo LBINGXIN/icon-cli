@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true, // 让IDE在保存文件的时候根据tsconfig.json重新生成文件
+  "compilerOptions": {
+    "target": "ES2018", // 指定 ECMAScript 目标版本
+    "module": "commonjs", // 指定生成哪个模块系统代码："None"，"CommonJS" "AMD"，"System"， "UMD"，"ES6"或"ES2015"
+    "moduleResolution": "node", // 决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "emitDecoratorMetadata": true, // 给源码里的装饰器声明加上设计类型元数据
+    "inlineSourceMap":true, // 生成单个sourcemaps文件，而不是将每sourcemaps生成不同的文件
+    "noImplicitThis": true, // 当 this表达式的值为 any类型的时候，生成一个错误
+    "noUnusedLocals": true, // 若有未使用的局部变量则抛错
+    "stripInternal": true, // 不对具有 /** @internal */ JSDoc注解的代码生成代码
+    "pretty": true, // 给错误和消息设置样式，使用颜色和上下文
+    "declaration": true, // 生成相应的 .d.ts文件
+    "outDir": "lib", // 重定向输出目录
+    "baseUrl": "./", // 解析非相对模块名的基准目录
+    "paths": { // 模块名到基于 baseUrl的路径映射的列表
+      "*": ["src/*"]
+    }
+  },
+  "exclude": [ // 排除编译文件
+    "lib",
+    "node_modules"
+  ]
+}

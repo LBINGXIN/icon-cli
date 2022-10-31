@@ -1,0 +1,37 @@
+{
+  "id": "3726883",
+  "name": "测试自动图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30966210",
+      "name": "箭头下",
+      "font_class": "arrow-down",
+      "unicode": "e786",
+      "unicode_decimal": 59270
+    },
+    {
+      "icon_id": "30966277",
+      "name": "箭头上",
+      "font_class": "arrow-up",
+      "unicode": "e7c9",
+      "unicode_decimal": 59337
+    },
+    {
+      "icon_id": "30966379",
+      "name": "置顶",
+      "font_class": "arrow-totop",
+      "unicode": "e82f",
+      "unicode_decimal": 59439
+    },
+    {
+      "icon_id": "30966426",
+      "name": "置底",
+      "font_class": "arrow-tobottom",
+      "unicode": "e85e",
+      "unicode_decimal": 59486
+    }
+  ]
+}
