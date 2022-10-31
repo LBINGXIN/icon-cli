@@ -2,10 +2,6 @@
  * update 命令需要用到的所有方法
  */
 /**
- * 判断是否登录
- */
-export declare function isLogin(): boolean;
-/**
  * 初始化
  * 打开Browser和Page，跳转到登录页面
  * @return object(page, browser)
@@ -47,6 +43,10 @@ export declare function handleIconMove(): void;
  * 打包构建
  */
 export declare function handleBuild(): void;
+/**
+ * 修改版本号
+ */
+export declare function handleChangeVersion(): void;
 /**
  * 发布
  */
