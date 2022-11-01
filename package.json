@@ -1,6 +1,6 @@
 {
   "name": "@lbingxin/icon-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "bin": {
     "icon-cli": "./bin/icon-cli.js"
@@ -58,6 +58,7 @@
   "description": "icon-cli",
   "dependencies": {
     "chalk": "4.1.2",
+    "commander": "^9.4.1",
     "compressing": "^1.6.2",
     "fs-extra": "^10.1.0",
     "ora": "5.4.1",
